@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4CAF50"/> <!-- Browser UI ka color -->
+    <title>Meri GitHub PWA</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Relative path -->
+    <link rel="manifest" href="./manifest.json"> <!-- Relative path -->
+    <link rel="apple-touch-icon" href="./images/icon-192x192.png"> <!-- Relative path -->
+</head>
+<body>
+    <header>
+        <h1>Swagat Hai Meri PWA Mein!</h1>
+        <p>Yeh GitHub Pages par chalegi.</p>
+    </header>
+
+    <main>
+        <section id="content">
+            <h2>Mukhya Content</h2>
+            <p>Yahan aap apni website ka content daal sakte hain. Yeh offline bhi dikhega agar PWA sahi se configure ho.</p>
+            <p>Refresh karke dekhein, ya offline hokar dekhein!</p>
+            <img src="https://via.placeholder.com/300x150.png?text=Online+Image" alt="Placeholder Image" style="max-width:100%; height:auto;">
+            <p>Yeh image bhi cache ho jayegi (agar sw.js mein iska pattern add karein ya yeh same origin se ho).</p>
+            <button id="installButton" style="display: none; margin-top: 20px;">App Install Karein</button>
+        </section>
+
+        <section id="offline-info" style="display:none; background-color: #ffc107; padding: 10px; text-align: center; margin-top:15px;">
+            <p>Aap abhi offline hain. Kuch content cache se aa raha hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Aapka Naam</p>
+    </footer>
+
+    <script src="./script.js"></script> <!-- Relative path -->
+</body>
+</html>
